@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    </head>
+    <body>
+        <div class="app-wrapper">
+            <!-- ───── LEFT SIDEBAR ───── -->
+            <aside class="sidebar" id="sidebar">
+                <div class="avatar-ring">
+                    <div class="avatar">
+                        <img src="Icons/Hanako PFP.jpeg" alt="User Avatar" />
+                        <!--The below code is for blank profile-->
+                        <!-- <svg
+                            viewBox="0 0 120 120"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="60" cy="48" r="26" fill="#c9a84c" />
+                            <circle cx="60" cy="48" r="22" fill="#f5d78a" />
+                            <circle cx="51" cy="45" r="4" fill="#2a2a2a" />
+                            <circle cx="69" cy="45" r="4" fill="#2a2a2a" />
+                            <path
+                                d="M50 58 Q60 67 70 58"
+                                stroke="#2a2a2a"
+                                stroke-width="2.5"
+                                fill="none"
+                                stroke-linecap="round"
+                            />
+                            <path
+                                d="M34 80 Q60 68 86 80 L90 120 H30 Z"
+                                fill="#c9a84c"
+                            />
+                            <rect
+                                x="47"
+                                y="68"
+                                width="26"
+                                height="12"
+                                rx="4"
+                                fill="#f5d78a"
+                            />
+                        </svg> -->
+                    </div>
+                </div>
+
+                <h1 class="sidebar-name">Surabhi Yadav</h1>
+                <span class="sidebar-badge">CSE Student (2nd Year)</span>
+
+                <div class="sidebar-info">
+                    <div class="info-item">
+                        <span class="info-icon"
+                            ><i class="fa fa-envelope"></i
+                        ></span>
+                        <div>
+                            <span class="info-label">EMAIL</span>
+                            <span class="info-value"
+                                >vvce24cse0185@vvce.ac.in</span
+                            >
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon"
+                            ><i class="fa fa-phone"></i
+                        ></span>
+                        <div>
+                            <span class="info-label">PHONE</span>
+                            <span class="info-value">+91 9980217341</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon"
+                            ><i class="fa fa-calendar"></i
+                        ></span>
+                        <div>
+                            <span class="info-label">BIRTHDAY</span>
+                            <span class="info-value">September 27, 2006</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon"
+                            ><i class="fa fa-location-dot"></i
+                        ></span>
+                        <div>
+                            <span class="info-label">LOCATION</span>
+                            <span class="info-value">Mysore, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-socials">
+                    <a
+                        href="https://github.com/surabhizenin"
+                        class="social-btn"
+                        data-title="GitHub"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/surabhi-yadav-862b32337/"
+                        class="social-btn"
+                        data-title="LinkedIn"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                        href="https://leetcode.com/u/surabhizenin/"
+                        class="social-btn"
+                        data-title="LeetCode"
+                    >
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </aside>
+
+            <!-- ───── MAIN CONTENT ───── -->
+            <main class="main-content">
+                <!-- NAV -->
+                <nav class="top-nav">
+                    <button class="nav-btn active" data-section="about">
+                        About
+                    </button>
+                    <button class="nav-btn" data-section="resume">
+                        Resume
+                    </button>
+                    <button class="nav-btn" data-section="projects">
+                        Projects
+                    </button>
+                    <button class="nav-btn" data-section="contact">
+                        Contact
+                    </button>
+                </nav>
+
+                <!-- ABOUT SECTION -->
+                <section class="section active" id="about">
+                    <div class="section-header">
+                        <h2>About Me</h2>
+                        <div class="accent-line"></div>
+                    </div>
+                    <p class="about-text">
+                        I'm a passionate Computer Science student at a top
+                        engineering college, deeply interested in full-stack web
+                        development, machine learning, and building things that
+                        make a difference. I love turning complex technical
+                        challenges into elegant, user-friendly solutions.
+                    </p>
+                    <p class="about-text">
+                        I thrive on exploring new technologies and applying them
+                        to real-world problems. Whether it's crafting clean
+                        frontends, building robust backends, or experimenting
+                        with AI models—I bring curiosity, discipline, and a
+                        growth mindset to everything I do.
+                    </p>
+
+                    <div class="what-doing">
+                        <h3>What I'm Doing</h3>
+                        <div class="cards-grid">
+                            <div class="skill-card">
+                                <div class="card-icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <div>
+                                    <h4>Web Development</h4>
+                                    <p>
+                                        Building responsive, performant
+                                        full-stack applications using modern
+                                        frameworks and best practices.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon">
+                                    <i class="fa fa-brain"></i>
+                                </div>
+                                <div>
+                                    <h4>Machine Learning</h4>
+                                    <p>
+                                        Exploring ML algorithms, neural
+                                        networks, and applying AI to solve
+                                        real-world problems.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon">
+                                    <i class="fa fa-mobile-screen"></i>
+                                </div>
+                                <div>
+                                    <h4>App Development</h4>
+                                    <p>
+                                        Creating cross-platform mobile
+                                        experiences that are intuitive and
+                                        performant.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="skill-card">
+                                <div class="card-icon">
+                                    <i class="fa fa-database"></i>
+                                </div>
+                                <div>
+                                    <h4>Data Structures & Algorithms</h4>
+                                    <p>
+                                        Solving competitive programming problems
+                                        and optimizing system efficiency at
+                                        scale.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- RESUME SECTION -->
+                <section class="section" id="resume">
+                    <div class="resume-header">
+                        <div class="section-header">
+                            <h2>Resume</h2>
+                            <div class="accent-line"></div>
+                        </div>
+                        <a
+                            href="Resume.pdf"
+                            download="Resume.pdf"
+                            class="download-btn"
+                        >
+                            <i class="fa fa-download"></i> Download CV
+                        </a>
+                    </div>
+
+                    <div class="resume-columns">
+                        <div class="resume-col">
+                            <h3 class="resume-col-title">
+                                <i class="fa fa-graduation-cap"></i> Education
+                            </h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="timeline-year"
+                                        >2024 – 2028</span
+                                    >
+                                    <h4>B.E in Computer Science</h4>
+                                    <p>
+                                        Vidyavardhaka College of Engineering,
+                                        Mysore
+                                    </p>
+                                    <span class="timeline-tag"
+                                        >CGPA: 8.38 / 10</span
+                                    >
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-year"
+                                        >2022 – 2024</span
+                                    >
+                                    <h4>PCMB</h4>
+                                    <p>
+                                        Gurukula Pre University College, Mysore
+                                    </p>
+                                    <span class="timeline-tag">90.2%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="skills-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>JAVA</span><span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>HTML / CSS / JavaScript</span
+                                ><span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>React / Next.js</span><span>78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Python / ML</span><span>72%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w: 72%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>SQL</span><span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Git / DevOps</span><span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--w: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROJECTS SECTION -->
+                <section class="section" id="projects">
+                    <div class="section-header">
+                        <h2>Projects</h2>
+                        <div class="accent-line"></div>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-tag">Web App</div>
+                            <h4>DevConnect</h4>
+                            <p>
+                                A social platform for developers to share
+                                projects, collaborate, and find teammates for
+                                hackathons.
+                            </p>
+                            <div class="project-stack">
+                                <span>React</span><span>Node.js</span
+                                ><span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"
+                                    ><i class="fab fa-github"></i> Code</a
+                                >
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-arrow-up-right-from-square"
+                                    ></i>
+                                    Live</a
+                                >
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">ML / AI</div>
+                            <h4>SentimentScope</h4>
+                            <p>
+                                Real-time Twitter sentiment analysis dashboard
+                                using NLP models and interactive D3.js
+                                visualizations.
+                            </p>
+                            <div class="project-stack">
+                                <span>Python</span><span>BERT</span
+                                ><span>D3.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"
+                                    ><i class="fab fa-github"></i> Code</a
+                                >
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-arrow-up-right-from-square"
+                                    ></i>
+                                    Demo</a
+                                >
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">CLI Tool</div>
+                            <h4>CodeVault</h4>
+                            <p>
+                                A terminal-based snippet manager that lets you
+                                store, tag, search, and reuse code snippets
+                                efficiently.
+                            </p>
+                            <div class="project-stack">
+                                <span>Go</span><span>SQLite</span
+                                ><span>TUI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"
+                                    ><i class="fab fa-github"></i> Code</a
+                                >
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">Mobile</div>
+                            <h4>CampusEats</h4>
+                            <p>
+                                Campus food ordering app with real-time
+                                tracking, digital wallet, and canteen inventory
+                                management.
+                            </p>
+                            <div class="project-stack">
+                                <span>Flutter</span><span>Firebase</span
+                                ><span>Dart</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"
+                                    ><i class="fab fa-github"></i> Code</a
+                                >
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-arrow-up-right-from-square"
+                                    ></i>
+                                    Demo</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTACT SECTION -->
+                <section class="section" id="contact">
+                    <div class="section-header">
+                        <h2>Contact</h2>
+                        <div class="accent-line"></div>
+                    </div>
+                    <p class="about-text">
+                        I'm always open to discussing new opportunities,
+                        internships, collaborations, or just geeking out over
+                        tech. Drop me a message!
+                    </p>
+
+                    <div class="contact-layout">
+                        <div class="contact-info-cards">
+                            <div class="contact-info-card">
+                                <i class="fa fa-envelope"></i>
+                                <div>
+                                    <span>Email</span>
+                                    <strong>vvce24cse0185@vvce.ac.in</strong>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <i class="fa fa-phone"></i>
+                                <div>
+                                    <span>Phone</span>
+                                    <strong>+91 9980217341</strong>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <i class="fa fa-location-dot"></i>
+                                <div>
+                                    <span>Location</span>
+                                    <strong>Mysore, India</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form
+                            class="contact-form"
+                            onsubmit="handleSubmit(event)"
+                        >
+                            <div class="form-row">
+                                <input
+                                    type="text"
+                                    placeholder="Your Name"
+                                    required
+                                />
+                                <input
+                                    type="email"
+                                    placeholder="Your Email"
+                                    required
+                                />
+                            </div>
+                            <input type="text" placeholder="Subject" />
+                            <textarea
+                                placeholder="Your message..."
+                                rows="5"
+                                required
+                            ></textarea>
+                            <button type="submit" class="submit-btn">
+                                <i class="fa fa-paper-plane"></i> Send Message
+                            </button>
+                            <div class="form-success" id="form-success">
+                                <i class="fa fa-circle-check"></i> Message sent!
+                                I'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="emailjs-handler.js"></script>
+    </body>
+</html>
